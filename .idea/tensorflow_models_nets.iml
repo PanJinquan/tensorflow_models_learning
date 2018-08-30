@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/slim" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7 (tensorflow-py27)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 2.7 (tensorflow-cpu-py27)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

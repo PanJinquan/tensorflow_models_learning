@@ -81,13 +81,13 @@ def step_train(train_op,loss,accuracy,
                 train_acc = sess.run(accuracy, feed_dict={input_images: batch_input_images,
                                                           input_labels: batch_input_labels,
                                                           keep_prob: 1.0, is_training: False})
-                print "%s: Step [%d]  train Loss : %f, training accuracy :  %g" % (
-                datetime.now(), i, train_loss, train_acc)
+                print("%s: Step [%d]  train Loss : %f, training accuracy :  %g" % (
+                datetime.now(), i, train_loss, train_acc))
 
             # val测试(测试全部val数据)
             if i % val_log_step == 0:
                 mean_loss, mean_acc = net_evaluation(sess, loss, accuracy, val_images_batch, val_labels_batch, val_nums)
-                print "%s: Step [%d]  val Loss : %f, val accuracy :  %g" % (datetime.now(), i, mean_loss, mean_acc)
+                print("%s: Step [%d]  val Loss : %f, val accuracy :  %g" % (datetime.now(), i, mean_loss, mean_acc))
 
             # 模型保存:每迭代snapshot次或者最后一次保存模型
             if (i % snapshot == 0 and i > 0) or i == max_steps:
