@@ -54,7 +54,7 @@ def freeze_graph_test(pb_path, image_path):
             print("out:{}".format(out))
             score = tf.nn.softmax(out, name='pre')
             class_id = tf.argmax(score, 1)
-            print "pre class_id:{}".format(sess.run(class_id))
+            print("pre class_id:{}".format(sess.run(class_id)))
 
 
 def freeze_graph(input_checkpoint,output_graph):

@@ -9,7 +9,7 @@ import slim.nets.inception_v3 as inception_v3
 from create_tf_record import *
 import tensorflow.contrib.slim as slim
 
-
+print("Tensorflow version:{}".format(tf.__version__))
 labels_nums = 5  # 类别个数
 batch_size = 16  #
 resize_height = 299  # 指定存储图片高度
@@ -31,7 +31,7 @@ def net_evaluation(sess,loss,accuracy,val_images_batch,val_labels_batch,val_nums
     val_max_steps = int(val_nums / batch_size)
     val_losses = []
     val_accs = []
-    for _ in xrange(val_max_steps):
+    for _ in range(val_max_steps):
         val_x, val_y = sess.run([val_images_batch, val_labels_batch])
         # print('labels:',val_y)
         # val_loss = sess.run(loss, feed_dict={x: val_x, y: val_y, keep_prob: 1.0})
@@ -154,7 +154,6 @@ def train(train_record_file,
     tf.losses.softmax_cross_entropy(onehot_labels=input_labels, logits=out)#添加交叉熵损失loss=1.6
     # slim.losses.add_loss(my_loss)
     loss = tf.losses.get_total_loss(add_regularization_losses=True)#添加正则化损失loss=2.2
-    accuracy = tf.reduce_mean(tf.cast(tf.equal(tf.argmax(out, 1), tf.argmax(input_labels, 1)), tf.float32))
 
     # Specify the optimization scheme:
     optimizer = tf.train.GradientDescentOptimizer(learning_rate=base_lr)
@@ -179,7 +178,7 @@ def train(train_record_file,
         # train_op = slim.learning.create_train_op(total_loss=loss,optimizer=optimizer)
         train_op = slim.learning.create_train_op(total_loss=loss, optimizer=optimizer)
 
-
+    accuracy = tf.reduce_mean(tf.cast(tf.equal(tf.argmax(out, 1), tf.argmax(input_labels, 1)), tf.float32))
     # 循环迭代过程
     step_train(train_op, loss, accuracy,
                train_images_batch, train_labels_batch, train_nums, train_log_step,

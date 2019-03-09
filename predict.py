@@ -18,6 +18,7 @@ def  predict(models_path,image_dir,labels_filename,labels_nums, data_format):
     labels = np.loadtxt(labels_filename, str, delimiter='\t')
     input_images = tf.placeholder(dtype=tf.float32, shape=[None, resize_height, resize_width, depths], name='input')
 
+    #其他模型预测请修改这里
     with slim.arg_scope(inception_v3.inception_v3_arg_scope()):
         out, end_points = inception_v3.inception_v3(inputs=input_images, num_classes=labels_nums, dropout_keep_prob=1.0, is_training=False)
 
@@ -36,7 +37,7 @@ def  predict(models_path,image_dir,labels_filename,labels_nums, data_format):
         #pred = sess.run(f_cls, feed_dict={x:im, keep_prob:1.0})
         pre_score,pre_label = sess.run([score,class_id], feed_dict={input_images:im})
         max_score=pre_score[0,pre_label]
-        print "{} is: pre labels:{},name:{} score: {}".format(image_path,pre_label,labels[pre_label], max_score)
+        print("{} is: pre labels:{},name:{} score: {}".format(image_path,pre_label,labels[pre_label], max_score))
     sess.close()
 
 
