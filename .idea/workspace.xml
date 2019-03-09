@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c03330d-4b8e-4335-90dc-086d198add7d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tensorflow_models_nets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tensorflow_models_nets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convert_pb.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert_pb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tf_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tf_record.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inception_v1_train_val.py" beforeDir="false" afterPath="$PROJECT_DIR$/inception_v1_train_val.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inception_v3_train_val.py" beforeDir="false" afterPath="$PROJECT_DIR$/inception_v3_train_val.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_train_val.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -131,8 +122,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="466">
-                <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <first_editor relative-caret-position="782">
+                <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
               </first_editor>
               <second_editor />
             </state>
@@ -407,6 +398,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1682" height="992" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299435" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -742,8 +734,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="466">
-            <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <first_editor relative-caret-position="782">
+            <caret line="46" column="85" selection-start-line="46" selection-start-column="85" selection-end-line="46" selection-end-column="85" />
           </first_editor>
           <second_editor />
         </state>

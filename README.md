@@ -43,8 +43,8 @@ if __name__ == '__main__':
 
 ## 3.资源下载
 - 本项目详细说明，请参考鄙人博客资料：
-> 《使用自己的数据集训练GoogLenet InceptionNet V1 V2 V3模型》: https://blog.csdn.net/guyuealian/article/details/81560537 </br>
-> 《tensorflow实现将ckpt转pb文件》: https://blog.csdn.net/guyuealian/article/details/82218092 </br>
+> 《使用自己的数据集训练GoogLenet InceptionNet V1 V2 V3模型》: https://panjinquan.blog.csdn.net/article/details/81560537 </br>
+> 《tensorflow实现将ckpt转pb文件》: https://panjinquan.blog.csdn.net/article/details/82218092 </br>
 > 《使用自己的数据集训练MobileNet图像识别（TensorFlow）》https://panjinquan.blog.csdn.net/article/details/88252699
 > 预训练模型下载地址: https://download.csdn.net/download/guyuealian/10610847  </br>
 - 老铁要是觉得不错，给个“star”
